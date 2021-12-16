@@ -1,19 +1,42 @@
-/* Error: Undefined mixin.
- *    ,
- * 13 | /     @include extra-large-devices() {
- * 14 | |         font-size: 75%; //1rem = 12px
- * 15 | \     }
- *    '
- *   sass\base\_reset.scss 13:2  @import
- *   sass\main.scss 8:9          root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 13 \2502  \250c      @include extra-large-devices() {\a 14 \2502  \2502          font-size: 75%; //1rem = 12px\a 15 \2502  \2514      }\a    \2575 \a   sass\\base\\_reset.scss 13:2  @import\a   sass\\main.scss 8:9          root stylesheet";
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+@media (min-width: 1800px) {
+  html {
+    font-size: 75%;
+  }
+}
+@media (max-width: 900px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

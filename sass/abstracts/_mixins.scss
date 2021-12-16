@@ -1,31 +1,40 @@
 // Reponsive with each breakpoints
 @mixin small-devices {
-    @media (max-width: #{$screen-sm-max}) {
+    @media (max-width: $screen-sm-max) {
         @content;
     }
 }
 
 @mixin medium-devices {
-    @media (max-width: #{$screen-md-max}) {
+    @media (max-width: $screen-md-max) {
         @content;
     }
 }
 
 @mixin large-devices {
-    @media (max-width: #{$screen-lg-max}) {
+    @media (max-width: $screen-lg-max) {
         @content;
     }
 }
 
-body{
-    background-color: yellow;
-    @include large-devices(){
-        background-color: blue;
-    }
-    @include medium-devices(){
-        background-color: green;
-    }
-    @include small-devices(){
-        background-color: red;
+@mixin extra-large-devices {
+    @media (min-width: $screen-xl-min) {
+        @content;
     }
 }
+
+// body{
+//     background-color: yellow;
+//     @include extra-large-devices(){
+//         background-color: orange;
+//     }
+//     @include large-devices(){
+//         background-color: blue;
+//     }
+//     @include medium-devices(){
+//         background-color: green;
+//     }
+//     @include small-devices(){
+//         background-color: red;
+//     }
+// }
