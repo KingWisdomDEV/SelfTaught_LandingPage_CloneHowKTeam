@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%; //1rem = 10px
+	scroll-behavior: smooth;
+
+	@include extra-large-devices() {
+		font-size: 75%; //1rem = 12px
+	}
+
+	@include medium-devices() {
+		font-size: 56.25%; //1rem = 9px
+	}
+
+	@include small-devices() {
+		font-size: 50%; //1 rem = 8px
+	}
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}

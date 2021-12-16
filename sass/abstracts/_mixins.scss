@@ -1,0 +1,31 @@
+// Reponsive with each breakpoints
+@mixin small-devices {
+    @media (max-width: #{$screen-sm-max}) {
+        @content;
+    }
+}
+
+@mixin medium-devices {
+    @media (max-width: #{$screen-md-max}) {
+        @content;
+    }
+}
+
+@mixin large-devices {
+    @media (max-width: #{$screen-lg-max}) {
+        @content;
+    }
+}
+
+body{
+    background-color: yellow;
+    @include large-devices(){
+        background-color: blue;
+    }
+    @include medium-devices(){
+        background-color: green;
+    }
+    @include small-devices(){
+        background-color: red;
+    }
+}
