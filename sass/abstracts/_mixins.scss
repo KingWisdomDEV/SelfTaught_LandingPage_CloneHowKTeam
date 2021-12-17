@@ -1,3 +1,11 @@
+// Wrap contents inside parent elements to center
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
 // Reponsive with each breakpoints
 @mixin small-devices {
     @media (max-width: $screen-sm-max) {
