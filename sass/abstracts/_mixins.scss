@@ -6,6 +6,12 @@
     transform: translate(-50%, -50%);
 } 
 
+@mixin textBackgroundColor($background-color) {
+    background-image: $background-color;
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
 // Reponsive with each breakpoints
 @mixin small-devices {
     @media (max-width: $screen-sm-max) {

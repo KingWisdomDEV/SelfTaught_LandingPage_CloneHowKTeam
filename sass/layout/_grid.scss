@@ -1,0 +1,69 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 114rem;
+    margin: 0 auto;
+    .col {
+        width: 100%;
+    }
+    
+    @media (min-width: $screen-sm-min) {
+        @for $item from 1 through 12 {
+            .col-sm-#{$item} {
+                width: calc($item/12 * 100%);
+            }
+        }
+    }
+
+    @media (min-width: $screen-md-min) {
+        @for $item from 1 through 12 {
+            .col-md-#{$item} {
+                width: calc($item/12 * 100%);
+            }
+        }
+    }
+
+    @media (min-width: $screen-lg-min) {
+        @for $item from 1 through 12 {
+            .col-lg-#{$item} {
+                width: calc($item/12 * 100%);
+            }
+        }
+    }
+
+    @media (min-width: $screen-xl-min) {
+        @for $item from 1 through 12 {
+            .col-xl-#{$item} {
+                width: calc($item/12 * 100%);
+            }
+        }
+    }
+}
+
+@for $item from 1 through 6 {
+    .ml#{$item} {
+        margin-left: #{$item}rem;
+    }
+    .mr#{$item} {
+        margin-right: #{$item}rem;
+    }
+    .mt#{$item} {
+        margin-top: #{$item}rem;
+    }
+    .mb#{$item} {
+        margin-bottom: #{$item}rem;
+    }
+    .pl#{$item} {
+        padding-left: #{$item}rem;
+    }
+    .pr#{$item} {
+        padding-right: #{$item}rem;
+    }
+    .pt#{$item} {
+        padding-top: #{$item}rem;
+    }
+    .pb#{$item} {
+        padding-bottom: #{$item}rem;
+    }
+}
+
