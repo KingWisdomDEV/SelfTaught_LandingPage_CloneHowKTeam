@@ -3,7 +3,8 @@
     flex-wrap: wrap;
     max-width: 114rem;
     margin: 0 auto;
-    .col {
+       
+    > * {
         width: 100%;
     }
     
@@ -40,7 +41,7 @@
     }
 }
 
-@for $item from 1 through 6 {
+@for $item from 0 through 6 {
     .ml#{$item} {
         margin-left: #{$item}rem;
     }

@@ -216,13 +216,35 @@ body {
   z-index: 10;
 }
 
+.skill-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: all 0.3s;
+}
+.skill-box:hover {
+  cursor: pointer;
+  transform: translateY(-1.5rem) scale(1.03);
+}
+.skill-box__icon {
+  background-image: linear-gradient(to right, #8e9efc, #1c3eff);
+  color: transparent;
+  -webkit-background-clip: text;
+  font-size: 6rem;
+}
+.skill-box__text {
+  font-size: 1.5rem;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
   max-width: 114rem;
   margin: 0 auto;
 }
-.row .col {
+.row > * {
   width: 100%;
 }
 @media (min-width: 480px) {
@@ -376,6 +398,38 @@ body {
   .row .col-xl-12 {
     width: 100%;
   }
+}
+
+.ml0 {
+  margin-left: 0rem;
+}
+
+.mr0 {
+  margin-right: 0rem;
+}
+
+.mt0 {
+  margin-top: 0rem;
+}
+
+.mb0 {
+  margin-bottom: 0rem;
+}
+
+.pl0 {
+  padding-left: 0rem;
+}
+
+.pr0 {
+  padding-right: 0rem;
+}
+
+.pt0 {
+  padding-top: 0rem;
+}
+
+.pb0 {
+  padding-bottom: 0rem;
 }
 
 .ml1 {
@@ -595,10 +649,29 @@ body {
   text-align: center;
 }
 
+.section-about,
+.section-skills {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.section-about .row > *,
+.section-skills .row > * {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .section-about {
   background-color: #f7f7f7;
   margin-top: -30rem;
-  padding-top: 30rem;
+  padding: 30rem 0;
+}
+
+.section-skills {
+  background-image: linear-gradient(to right bottom, rgba(142, 158, 252, 0.8), rgba(28, 62, 255, 0.8)), url("../img/background2.jpg");
+  background-size: cover;
+  clip-path: ellipse(70% 50% at 50% 50%);
+  margin-top: -20rem;
+  padding: 20rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */

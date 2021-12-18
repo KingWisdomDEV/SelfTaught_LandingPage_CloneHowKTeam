@@ -1,5 +1,29 @@
-.section-about{
+.section-about,
+.section-skills {
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+    .row > * {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+.section-about {
     background-color: $color-grey-light-1;
     margin-top: -30rem;
-    padding-top: 30rem;
+    padding: 30rem 0;
+}
+
+.section-skills {
+    background-image: linear-gradient(
+            to right bottom,
+            rgba($color-primary-light, 0.8),
+            rgba($color-primary-dark, 0.8)
+        ),
+        url("../img/background2.jpg");
+    background-size: cover; 
+    clip-path: ellipse(70% 50% at 50% 50%);
+    margin-top: -20rem;
+    padding: 20rem 0;
 }
