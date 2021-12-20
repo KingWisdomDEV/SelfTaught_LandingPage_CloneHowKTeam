@@ -1,5 +1,6 @@
 .section-about,
-.section-skills {
+.section-skills,
+.section-courses {
     padding-left: 3rem;
     padding-right: 3rem;
 
@@ -22,8 +23,14 @@
             rgba($color-primary-dark, 0.8)
         ),
         url("../img/background2.jpg");
-    background-size: cover; 
+    background-size: cover;
     clip-path: ellipse(70% 50% at 50% 50%);
     margin-top: -20rem;
     padding: 20rem 0;
+}
+
+.section-courses {
+    margin-top: -20rem;
+    padding-top: 25rem;
+    background-color: $color-grey-light-1;
 }

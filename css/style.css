@@ -238,6 +238,119 @@ body {
   font-size: 1.5rem;
 }
 
+.flip-card {
+  height: 45rem;
+  perspective: 150rem;
+  position: relative;
+}
+.flip-card__side {
+  position: absolute;
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border-radius: 5rem;
+  font-size: 2rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: all 0.8s;
+  overflow: hidden;
+}
+.flip-card__side--front {
+  background-color: #fff;
+}
+.flip-card__side--back {
+  transform: rotateY(180deg);
+}
+.flip-card__side--back-1 {
+  background-image: linear-gradient(to right, #ffb900, #ff7730);
+}
+.flip-card__side--back-2 {
+  background-image: linear-gradient(to right, #8e9efc, #1c3eff);
+}
+.flip-card__side--back-3 {
+  background-image: linear-gradient(to right, #55c57a, #28b485);
+}
+.flip-card:hover .flip-card__side--front {
+  transform: rotateY(-180deg);
+}
+.flip-card:hover .flip-card__side--back {
+  transform: rotateY(0);
+}
+.flip-card__picture {
+  height: 23rem;
+  background-size: cover;
+  background-blend-mode: screen;
+  clip-path: ellipse(80% 70% at 50% 30%);
+}
+.flip-card__picture--1 {
+  background-image: linear-gradient(to right, #ffb900, #ff7730), url("../../img/involve1.jpg");
+}
+.flip-card__picture--2 {
+  background-image: linear-gradient(to right, #8e9efc, #1c3eff), url("../../img/involve2.jpg");
+}
+.flip-card__picture--3 {
+  background-image: linear-gradient(to right, #55c57a, #28b485), url("../../img/involve3.jpg");
+}
+.flip-card__heading {
+  text-transform: uppercase;
+  font-size: 2.8rem;
+  font-weight: 300;
+  color: #fff;
+  text-align: right;
+  position: absolute;
+  top: 12rem;
+  right: 3rem;
+}
+.flip-card__heading-span {
+  padding: 1rem 1.5rem;
+  border-radius: 5rem;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.flip-card__heading-span--1 {
+  background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85));
+}
+.flip-card__heading-span--2 {
+  background-image: linear-gradient(to right bottom, rgba(142, 158, 252, 0.85), rgba(28, 62, 255, 0.85));
+}
+.flip-card__heading-span--3 {
+  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.85), rgba(40, 180, 133, 0.85));
+}
+.flip-card__details {
+  padding: 3rem;
+  color: #777777;
+}
+.flip-card__details ul {
+  width: 70%;
+  margin: 0 auto;
+}
+.flip-card__details ul li {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.flip-card__details ul li:not(:last-child) {
+  border-bottom: 1px solid rgba(119, 119, 119, 0.3);
+}
+.flip-card__price-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+  color: #fff;
+}
+.flip-card__price-text {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+.flip-card__price-value {
+  font-size: 6rem;
+  font-weight: 100;
+  margin-bottom: 5rem;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -650,12 +763,14 @@ body {
 }
 
 .section-about,
-.section-skills {
+.section-skills,
+.section-courses {
   padding-left: 3rem;
   padding-right: 3rem;
 }
 .section-about .row > *,
-.section-skills .row > * {
+.section-skills .row > *,
+.section-courses .row > * {
   padding-left: 3rem;
   padding-right: 3rem;
 }
@@ -672,6 +787,12 @@ body {
   clip-path: ellipse(70% 50% at 50% 50%);
   margin-top: -20rem;
   padding: 20rem 0;
+}
+
+.section-courses {
+  margin-top: -20rem;
+  padding-top: 25rem;
+  background-color: #f7f7f7;
 }
 
 /*# sourceMappingURL=style.css.map */
