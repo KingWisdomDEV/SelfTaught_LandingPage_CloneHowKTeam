@@ -862,5 +862,8 @@ body {
   padding-top: 25rem;
   background-color: #f7f7f7;
 }
+.section-courses .row {
+  margin-bottom: 8rem;
+}
 
 /*# sourceMappingURL=style.css.map */
