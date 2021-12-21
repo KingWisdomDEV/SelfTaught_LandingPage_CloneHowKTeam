@@ -34,12 +34,21 @@
     padding-top: 25rem;
     padding-bottom: 10rem;
     background-color: $color-grey-light-1;
-    .row{
+    .row {
         margin-bottom: 8rem;
     }
 }
 
-.section-testimonials{
+.section-testimonials {
     position: relative;
     padding: 5rem 0;
+}
+
+.section-enroll {
+    background-image: linear-gradient(
+        to right bottom,
+       $color-primary-light,
+        $color-primary-dark
+    );
+    padding: 10rem 0;
 }
