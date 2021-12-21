@@ -1,0 +1,51 @@
+.testimonial{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    box-shadow: 0 3rem 6rem rgba($color-black, .15);
+    padding: 6rem;
+    font-size: $default-font-size;
+    border-radius: 100rem;
+    background-color: rgba($color-white, .1);
+
+    &__shape{
+        width: 15rem;
+        height: 15rem;
+        float: left;
+        clip-path: circle(50% at 50% 50%);
+        margin-top: -1rem;
+        shape-outside: circle(50% at 50% 50%);
+        margin-right: 3rem;
+        position: relative;
+    }
+    &__img{
+        width: 100%;
+        transform: translateY(-2rem);
+        transition: all .3s linear;
+    }
+    &__caption{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: $color-white;
+        transform: translate(-50%,20%);
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        text-align: center;
+        opacity: 0;
+        transition: all .3s linear;
+    }
+    &__shape:hover{ 
+        cursor: pointer;
+    }       
+    &__shape:hover &__caption{        
+        opacity: 1;
+        transform: translate(-50%,-50%);
+    }
+
+    &__shape:hover &__img{
+        transform: scale(1.05);
+        filter: blur(.5rem) brightness(70%);
+    }
+   
+}

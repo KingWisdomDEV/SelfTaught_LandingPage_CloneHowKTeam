@@ -32,8 +32,14 @@
 .section-courses {
     margin-top: -20rem;
     padding-top: 25rem;
+    padding-bottom: 10rem;
     background-color: $color-grey-light-1;
     .row{
         margin-bottom: 8rem;
     }
+}
+
+.section-testimonials{
+    position: relative;
+    padding: 5rem 0;
 }
