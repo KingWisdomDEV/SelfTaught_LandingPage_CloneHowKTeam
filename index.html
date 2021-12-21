@@ -10,6 +10,32 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <div class="menu">
+        <input type="checkbox" class="menu__checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu__button">
+            <span class="menu__icon"></span>
+        </label>
+        <div class="menu__background"></div>
+        <div class="menu__nav">
+            <ul class="menu__nav-list">
+                <li class="menu__nav-item">
+                    <a href="#" class="menu__nav-link">About us</a>
+                </li>
+                <li class="menu__nav-item">
+                    <a href="#" class="menu__nav-link">Our Skills</a>
+                </li>
+                <li class="menu__nav-item">
+                    <a href="#" class="menu__nav-link">Our Courses</a>
+                </li>
+                <li class="menu__nav-item">
+                    <a href="#" class="menu__nav-link">Testimonials</a>
+                </li>
+                <li class="menu__nav-item">
+                    <a href="#" class="menu__nav-link">Enroll Form</a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <header class="header">
         <div class="header__logo-box">
             <img src="./img/logooutline.png" alt="logo self taught" class="header__logo">
@@ -76,7 +102,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-courses">
+        <section class="section-courses" id="courses">
             <div class="u-center-text u-mb-big">
                 <h2 class="heading-secondary">Our Courses</h2>
             </div>
@@ -180,7 +206,7 @@
                 <a href="#" class="btn btn--primary">See all our courses</a>
             </div>
         </section>
-        <section class="section-testimonials">
+        <section class="section-testimonials" id="testimonials">
             <div class="bg-video">
                 <video class="bg-video__content" autoplay="true" muted loop>
                     <source src="/img/Boulevard.mp4" type="video/mp4">
@@ -220,7 +246,7 @@
                 <a href="#" class="btn-text">Read all the testimonials &rarr;</a>
             </div>
         </section>
-        <section class="section-enroll">
+        <section class="section-enroll" id="enroll">
             <div class="row">
                 <div class="enroll">
                     <div class="enroll__form">

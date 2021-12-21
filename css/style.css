@@ -582,6 +582,113 @@ body, button {
   width: 50%;
 }
 
+.menu__checkbox {
+  display: none;
+}
+.menu__button {
+  background-color: #fff;
+  height: 7rem;
+  width: 7rem;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  z-index: 2000;
+  border-radius: 50%;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
+}
+.menu__background {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  z-index: 1000;
+  background-image: radial-gradient(#5a73fc, #1c3eff);
+  transition: all 0.8s;
+}
+.menu__checkbox:checked ~ .menu__background {
+  transform: scale(80);
+}
+.menu__nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1111;
+  height: 100vh;
+  width: 0;
+  opacity: 0;
+  transition: all 0.8s;
+}
+.menu__nav-list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.menu__nav-link:link, .menu__nav-link:visited {
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius: 4rem;
+  font-size: 3rem;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  background-image: radial-gradient(150% 200% ellipse at 115%, #fff 0%, #fff 50%, transparent 50%);
+  background-size: 252%;
+  transition: all 0.4s;
+}
+.menu__nav-link:hover {
+  color: #5a73fc;
+  background-position: 100%;
+  transform: translateX(1rem);
+}
+.menu__checkbox:checked ~ .menu__nav {
+  opacity: 1;
+  width: 100%;
+}
+.menu__icon {
+  position: relative;
+  margin-top: 3.35rem;
+}
+.menu__icon, .menu__icon::before, .menu__icon::after {
+  width: 3.5rem;
+  height: 0.3rem;
+  background-color: #333;
+  display: inline-block;
+}
+.menu__icon::before, .menu__icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all 0.2s;
+}
+.menu__icon::before {
+  top: -0.8rem;
+}
+.menu__icon::after {
+  top: 0.8rem;
+}
+.menu__button:hover .menu__icon::before {
+  top: -1rem;
+}
+.menu__button:hover .menu__icon::after {
+  top: 1rem;
+}
+.menu__checkbox:checked + .menu__button .menu__icon {
+  background-color: transparent;
+}
+.menu__checkbox:checked + .menu__button .menu__icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+.menu__checkbox:checked + .menu__button .menu__icon::after {
+  top: 0;
+  transform: rotate(-135deg);
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
