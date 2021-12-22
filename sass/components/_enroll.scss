@@ -9,9 +9,30 @@
     box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
     border-radius: 5rem;
     height: 50rem;
+    @include medium-devices() {
+        background-image: 
+        radial-gradient( 150% 200% ellipse at -15%, 
+            rgba($color-white, .8) 0%,
+            rgba($color-white, .8) 65%,
+            transparent 35%),
+        url("../img/background3.jpg");
+    }
+    @include small-devices() {
+        background-image: 
+        linear-gradient( to right, 
+            rgba($color-white, .8) 0%,
+            rgba($color-white, .8) 100%),
+        url("../img/background3.jpg");
+    }
 
     &__form{
         padding: 6rem;
         width: 50%;
+        @include medium-devices() {
+            width: 85%;
+        }
+        @include small-devices() {
+           width: 100%;
+        }
     }
 }

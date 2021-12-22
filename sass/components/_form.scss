@@ -14,6 +14,9 @@
         background-color: rgba($color-white, .5);
         width: 80%;
         transition: all .3s;
+        @include small-devices() {
+            width: 100%;
+        }
         &:focus{
             outline: none;
             box-shadow: 0 1rem 2rem rgba($color-black, .15);
@@ -44,6 +47,14 @@
     &__radio-group{
         width: 45%;
         display: inline-block;
+        @include small-devices() {
+            &:first-child{
+                width: 55%;
+            }
+            &:nth-child(2){
+                width: 44%;
+            }
+        }
     }
     &__radio-input{
         display: none;

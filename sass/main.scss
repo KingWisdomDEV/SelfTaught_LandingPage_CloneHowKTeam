@@ -10,6 +10,13 @@
 @import 'base/typography';
 @import 'base/animations';
 
+@import 'layout/menu';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/sidebar';
+@import 'layout/forms';
+
 @import 'components/buttons';
 @import 'components/carousel';
 @import 'components/slider';
@@ -21,13 +28,6 @@
 @import 'components/testimonials';
 @import 'components/form';
 @import 'components/enroll';
-
-@import 'layout/menu';
-@import 'layout/grid';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/sidebar';
-@import 'layout/forms';
 
 @import 'pages/home';
 

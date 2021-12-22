@@ -1,12 +1,20 @@
 .footer{
     background-color: $color-grey-dark-1;
-    padding: 10rem 0;
+    padding: 10rem 6rem;
     color: $color-grey-light-1;
+    @include medium-devices() {
+        .row {
+            max-width: 50rem;        
+        }
+    }
     &__logo-box{
         margin-bottom: 8rem;
         display: flex;
         flex-direction: column;
         align-items: center;
+        @include medium-devices() {
+            margin-bottom: 6rem;
+        }
     }
     &__logo{
         width: 20rem;
@@ -46,5 +54,12 @@
     &__copyright {
         width: 70%;
         float: right;
+    }
+    @include medium-devices() {
+        &__nav, &__copyright{
+            width: 100%;
+            text-align: center;
+            float: none
+        }
     }
 }
