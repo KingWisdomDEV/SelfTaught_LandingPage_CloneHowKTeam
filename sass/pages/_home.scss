@@ -33,6 +33,12 @@
     clip-path: ellipse(70% 50% at 50% 50%);
     margin-top: -20rem;
     padding: 20rem 0;
+    @include medium-devices() {
+        clip-path: ellipse(85% 45% at 50% 50%);
+    }
+    @include small-devices() {
+        clip-path: ellipse(90% 45% at 50% 50%);
+    }
 }
 
 .section-courses {
@@ -40,6 +46,12 @@
     padding-top: 25rem;
     padding-bottom: 10rem;
     background-color: $color-grey-light-1;
+    @include medium-devices() {
+        padding-top: 17rem;
+        .row {
+            max-width: 50rem;        
+        }
+    }
     .row {
         margin-bottom: 8rem;
     }

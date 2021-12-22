@@ -11,6 +11,9 @@
     }
     > * {
         width: 100%;
+        &:not(:last-child){
+            margin-bottom: 6rem;
+        }
     }
     
     @media (min-width: $screen-sm-min) {
