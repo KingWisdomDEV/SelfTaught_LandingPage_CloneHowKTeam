@@ -663,7 +663,7 @@ body, button {
 }
 
 .header {
-  background-image: linear-gradient(to right bottom, rgba(142, 158, 252, 0.8), rgba(40, 180, 133, 0.8)), url(../../img/background1.jpg);
+  background-image: linear-gradient(to right bottom, rgba(142, 158, 252, 0.8), rgba(40, 180, 133, 0.8)), url(../img/background1.jpg);
   height: 100vh;
   background-size: cover;
   background-position: top;
@@ -982,13 +982,13 @@ body, button {
   clip-path: ellipse(80% 70% at 50% 30%);
 }
 .flip-card__picture--1 {
-  background-image: linear-gradient(to right, #ffb900, #ff7730), url("../../img/involve1.jpg");
+  background-image: linear-gradient(to right, #ffb900, #ff7730), url("../img/involve1.jpg");
 }
 .flip-card__picture--2 {
-  background-image: linear-gradient(to right, #8e9efc, #1c3eff), url("../../img/involve2.jpg");
+  background-image: linear-gradient(to right, #8e9efc, #1c3eff), url("../img/involve2.jpg");
 }
 .flip-card__picture--3 {
-  background-image: linear-gradient(to right, #55c57a, #28b485), url("../../img/involve3.jpg");
+  background-image: linear-gradient(to right, #55c57a, #28b485), url("../img/involve3.jpg");
 }
 .flip-card__heading {
   text-transform: uppercase;
