@@ -17,6 +17,14 @@ body, button {
         font-size: 6rem;
         font-weight: 400;
         letter-spacing: 1.5rem;
+        @include medium-devices() {
+            font-size: 5.5rem;
+            letter-spacing: 1.3rem;
+        }
+        @include small-devices() {
+            font-size: 5rem;
+            letter-spacing: 1rem;
+        }
     }
 
     &--sub{
@@ -24,6 +32,12 @@ body, button {
         font-size: 2rem;
         font-weight: 600;
         letter-spacing: 1.7rem;
+        @include medium-devices() {
+            letter-spacing: 1.4rem;
+        }
+        @include small-devices() {
+            letter-spacing: 1rem;
+        }
     }
 }
 

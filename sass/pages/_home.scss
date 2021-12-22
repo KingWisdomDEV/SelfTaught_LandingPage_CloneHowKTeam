@@ -14,6 +14,12 @@
     background-color: $color-grey-light-1;
     margin-top: -30rem;
     padding: 30rem 0;
+    @include medium-devices() {
+        padding: 20rem 0;
+    }
+    @include small-devices() {
+        padding: 17rem 0;
+    }
 }
 
 .section-skills {

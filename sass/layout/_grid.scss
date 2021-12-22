@@ -3,7 +3,12 @@
     flex-wrap: wrap;
     max-width: 114rem;
     margin: 0 auto;
-       
+    @include medium-devices() {
+        max-width: 70rem;
+    }
+    @include small-devices() {
+        max-width: 50rem;
+    }
     > * {
         width: 100%;
     }

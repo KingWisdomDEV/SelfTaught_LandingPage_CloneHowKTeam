@@ -1,6 +1,6 @@
 .composition{
     position: relative;
-
+    min-height: 30rem;
     &__photo{
         width: 50%;
         border-radius: .2rem;
@@ -8,23 +8,47 @@
         box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
         outline-offset: 1rem;
         transition: all .3s;
+        @include medium-devices() {
+            float: left;
+            width: calc(100% / 3);
+            box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
+            outline-offset: .6rem;
+            position: relative;
+        }
+
         &--p1{
             left: 0;
             top: -2rem;
+            @include medium-devices() {
+                top: 5rem;
+            }
         }
         &--p2{
             right: 2rem;
             top: 2rem;
+            @include medium-devices() {
+                right: 0;
+                top: 4rem;
+                transform: scale(1.1);
+            }
         }
         &--p3{
             left: 10%;
             top: 10rem;
+            @include medium-devices() {
+                top: 5rem;
+                left: 0;
+            }
         }
         &:hover{
             cursor: pointer;
             transform: scale(1.2);
             outline: 1rem solid $color-primary;
             z-index: 10;
+            @include medium-devices() {
+                transform: scale(1.15);
+                outline: .6rem solid $color-primary;
+            }
         }
     }
 }
