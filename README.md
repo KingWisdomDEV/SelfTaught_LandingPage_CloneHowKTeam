@@ -15,4 +15,8 @@ Techniques:
   2. CSS3
   3. SASS(CSS pre-processor)
 
+Design Pattern:
+  1. Using 7-1 Parttern Architecture to setup sass folder
+  2. Using BEM (Block. Element. Modifier) for naming class 
+
 Preview: https://kingwisdomdev.github.io/SelfTaught_LandingPage_CloneHowKTeam/
