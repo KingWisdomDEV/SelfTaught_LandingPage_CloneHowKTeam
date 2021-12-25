@@ -19,4 +19,8 @@ Design Pattern:
   1. Using 7-1 Parttern Architecture to setup sass folder
   2. Using BEM (Block. Element. Modifier) for naming class 
 
+Librarys: 
+  1. Google Fonts
+  2. FontAwesome 5
+  
 Preview: https://kingwisdomdev.github.io/SelfTaught_LandingPage_CloneHowKTeam/
